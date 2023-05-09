@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IOU</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://cdn.bootcss.com/jquery/2.1.2/jquery.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/swiper-3.3.1.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/functions.js"></script>
+    <script src="js/garden.js"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js"></script>
+    <span class="iconfont icon-browser fullS"></span>
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <span class="comments">/**</span><br />
+                <span class="space" /><span class="comments">* so I wrote and slightly coppied some codes to celebrate our 1st monthsary.</span><br
+                />
+                <span class="space" /><span class="comments">*/</span><br /> GIrl i = <span class="keyword">current</span> Girl(
+                <span
+                    class="string">"your bebeloves"</span>);<br /> Girl u = <span class="keyword">current</span> wife(<span class="string">"Baby rara"</span>);<br
+                    />
+                    <span class="comments">// January 14, 2023, I told you I love you and confessed who i really am.</span><br /> i.love(u);
+                    <br />
+                    <span class="comments">// Luckily, you accepted and became my wife eversince.</span><br /> u.accepted();
+                    <br />
+                    <span class="comments">// I miss u every day.</span><br /> i.miss(u);
+                    <br />
+                    <span class="comments">// And I want to take care of you, and our love.</span><br /> i.takeCareOf(u);
+                    <br />
+                    <span class="comments">// I love you so much</span><br />
+                    <span class="comments">// and I will wait until I can finally ask tito and tita for your hand</span><br />
+                    <span class="keyword">boolean</span> i.love(u); = <span class="keyword">true</span>;<br />                    <span class="keyword">while</span> (i.loveu) {<br />
+                    <span class="placeholder" />i.waitFor(u);<br />
+                    <span class="placeholder" /><span class="comments">// I think it is an important decision</span><br />
+                    <span class="placeholder" /><span class="comments">// and you should think it over.</span><br />
+                    <span class="placeholder" />isHesitate = u.thinkOver();<br /> }
+                    <br />
+                    <span class="comments">// After a romantic wedding, we will live happily ever after.</span><br /> i.marry(u);
+                    <br /> i.liveHappilyWith(u);
+                    <br />
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                        Aira, I have fallen in love with you for
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                        Love u forever and ever.<br/>
+                        <div class="signature">- nicole your bebeloves</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2010, 10, 2);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+    "
+    <button class="click-me" onclick="location.href='https://trylanghehe.000webhostapp.com/'">
+      click me after!
+    </button>
+
+
+
+</body>
+
+</html>
